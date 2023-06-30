@@ -14,10 +14,11 @@ app.use(express.urlencoded({ extended: true }));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.get('/', (req, res) => {
+app.get('/ejs', (req, res) => {
   res.render('index.ejs');
 });
 
 app.listen(PORT, () => {
   console.log('Server rodando na porta ' + PORT);
 });
+
