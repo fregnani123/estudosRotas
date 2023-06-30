@@ -6,7 +6,7 @@ const path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/teste', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'teste.html'));
+  res.sendFile(path.join(__dirname, 'public','teste.html'));
 });
 
 app.use(express.urlencoded({ extended: true }));
