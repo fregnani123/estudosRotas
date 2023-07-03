@@ -2,13 +2,14 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 const path = require('path');
-const rout = require()
+const routes = require('./src/routes/routes')
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/teste', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public','teste.html'));
-});
+app.use(routes);
+
+app.get('/teste', routes)
+
 
 app.use(express.urlencoded({ extended: true }));
 
