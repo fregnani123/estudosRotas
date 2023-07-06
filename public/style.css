@@ -1,0 +1,25 @@
+
+
+form{
+   left: 400px;
+   width:250px;
+   background:white;
+   display: block;
+   padding: 25px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(13, 145, 163)
+}
+
+label{
+    display: block;
+
+}
+
+input{
+    width: 100%;
+}
+
