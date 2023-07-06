@@ -13,6 +13,25 @@ const turma = [
 
 ];
 
-for (const nomes of turma){
-    console.log(nomes.aluno)
-}
+const nomesIdadesAlunos = turma.map(aluno => {
+    return {
+      nome: aluno.aluno,
+      idade: aluno.idade,
+      categoria: aluno.idade >= 30 ? 'Adulto' : 'Jovem'
+    };
+  });
+  
+  console.log(nomesIdadesAlunos);
+
+// const idadeTotal = turma.reduce((a,b) => a = a+b.idade,0)
+
+// const idadeMaiorDe30 = turma.filter(a => a.idade > 30);
+
+
+
+
+
+// for (const nomes of turma){
+//     console.log(nomes.aluno)
+// }
+
