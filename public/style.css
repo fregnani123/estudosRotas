@@ -9,6 +9,8 @@ form{
 }
 
 body{
+
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     background-color:rgb(13, 145, 163)
@@ -22,4 +24,5 @@ label{
 input{
     width: 100%;
 }
+
 
