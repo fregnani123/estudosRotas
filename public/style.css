@@ -24,6 +24,7 @@ form {
     padding: 5px;
     font-size: 15px;
   }
+ 
   
   input:focus{
     outline: 2px solid #ccc;

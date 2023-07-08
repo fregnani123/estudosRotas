@@ -17,9 +17,17 @@ const senha = document.querySelector('.nome');
 const repetirSenha = document.querySelector('.repetirSenha');
 
 
-formulario.addEventListener('submit',(e)=>{ if(e.type === 'submit') e.preventDefault();
-if (!nome.value){
-    console.log('nome vazio');
-}
+formulario.addEventListener('submit',(e)=>{
+ e.preventDefault(); 
 
-});
+ if (!nome.value){
+    console.log('Preencha seu nome');
+ };
+ 
+ if(!sobrenome.value){
+    console.log('Preencha Sobrenome');
+    return
+ };
+
+ formulario.submit();
+})
