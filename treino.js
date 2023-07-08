@@ -16,6 +16,8 @@ const cpf= document.querySelector('.cpf')
 const senha = document.querySelector('.nome');
 const repetirSenha = document.querySelector('.repetirSenha');
 
+const nomeLabel = document.querySelector('#nome')
+
 
 formulario.addEventListener('submit',(e)=>{
  e.preventDefault(); 
@@ -26,6 +28,7 @@ formulario.addEventListener('submit',(e)=>{
  
  if(!sobrenome.value){
     console.log('Preencha Sobrenome');
+     nomeLabel.style.color = 'red';
     return
  };
 
