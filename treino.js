@@ -27,8 +27,7 @@ formulario.addEventListener('submit',(e)=>{
  };
  
  if(!sobrenome.value){
-    console.log('Preencha Sobrenome');
-     nomeLabel.style.color = 'red';
+   
     return
  };
 
