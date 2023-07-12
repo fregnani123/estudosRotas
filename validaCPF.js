@@ -14,7 +14,7 @@ class ValidaCPF{
    }
 };
 
-const cpfValido = new ValidaCPF('063.912.989-71');
+const cpfValido = new ValidaCPF('063.912.989-7');
 
 
 console.log(cpfValido.validaCPF());
