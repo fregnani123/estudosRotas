@@ -1,11 +1,20 @@
 
 class ValidaCPF{
     constructor(cpfEnviado){
-    this.cpfEnviado = cpfEnviado;
-    Object.defineProperty(this,'validaCPF')
+    Object.defineProperty(this,'cpfLimpo', {
+      value: cpfEnviado.replace(/\D+/g,''),
+      configurable:true,
+      enumerable:true,
+      writable:true,
+    })
     }
+   validaCPF(){
+    if(this.cpfLimpo.length !== 11) return false
+     return ('cheguei')
+   }
 };
 
 const cpfValido = new ValidaCPF('063.912.989-71');
 
-console.log(cpfValido)
+
+console.log(cpfValido.validaCPF());
